@@ -250,7 +250,7 @@ container.write(data)
 #plot the data
 container = st.container(border=True)
 container.subheader('Data Visualization ',divider='rainbow')
-fig = px.line(data,x='Date',y=data.columns,width=800,height=800)
+fig = px.line(data,x='Date',y=data.columns,width=800,height=600)
 container.plotly_chart(fig)
 
 
