@@ -1,0 +1,12 @@
+streamlit
+pandas==2.0.1
+numpy==1.24.3 
+yfinance
+matplotlib==3.7.1
+seaborn==0.12.2
+plotly==5.14.1
+datetime
+# date
+timedelta
+requests==2.30.0
+beautifulsoup4==4.12.2
