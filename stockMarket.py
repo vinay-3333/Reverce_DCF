@@ -19,7 +19,8 @@ container.subheader('interactive tools to valuate and analyze stocks through Rev
 
 
 #add an image 
-container.image('https://media.istockphoto.com/id/1492226950/photo/stock-market-online-business-graph-forex-trading-graph.jpg?s=612x612&w=0&k=20&c=Ft8YFU-iMJuk1gfs_3oEJ_FLDffitrJMVzMv0cIuIVs=',width=500)
+container=st.container(border=True)
+container.image('https://media.istockphoto.com/id/1492226950/photo/stock-market-online-business-graph-forex-trading-graph.jpg?s=612x612&w=0&k=20&c=Ft8YFU-iMJuk1gfs_3oEJ_FLDffitrJMVzMv0cIuIVs=',width=600)
 
 #take input from the user of app about the start and end date 
 
