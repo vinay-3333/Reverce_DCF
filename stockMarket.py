@@ -225,9 +225,9 @@ container.write(table())
 def sales_profit_graph():
     # index,column,val=get_index_column_values()
     graph=table()
-    graph.insert(0,'Growth',graph.index,True)
-    graph.reset_index(drop=True,inplace=True)
-    # fig = px.bar(graph.index[0],graph.columns[0:])
+    # graph.insert(0,'Growth',graph.index,True)
+    # graph.reset_index(drop=True,inplace=True)
+    # # fig = px.bar(graph.index[0],graph.columns[0:])
     return graph  
     # fig = px.histogram(graph,graph.loc[1:])
 
@@ -236,7 +236,7 @@ def sales_profit_graph():
 profit=sales_profit_graph()
 container = st.container(border=True)
 container.subheader("Sales and Profit Growth Graph",divider='rainbow')
-container.bar_chart(profit,x='Growth',y=profit.columns[1:],width=700,height=500)
+container.bar_chart(profit,x=profit.index['Sales Growth'],y=profit.columns,width=700,height=500)
 
 
 #fetch data from user input using yfinance 
