@@ -236,7 +236,7 @@ def sales_profit_graph():
 profit=sales_profit_graph()
 container = st.container(border=True)
 container.subheader("Sales and Profit Growth Graph",divider='rainbow')
-container.bar_chart(profit,x=profit.index['Sales Growth'],y=profit.columns,width=700,height=500)
+container.histogram(profit,x=profit.index['Sales Growth'],y=profit.columns,width=700,height=500)
 
 
 #fetch data from user input using yfinance 
